@@ -58,7 +58,9 @@ html, body {
 .toolbar {
 	border: 1px solid blue;
 	display: block;
-	height: 50px;
+	padding: 10px;
+	font-size: 24px;
+	
 }
 
 .messages {
@@ -68,19 +70,30 @@ html, body {
 	height: 90%;
 }
 
+.message-title {
+	border-bottom: 1px solid blue;
+	padding: 3px;
+	padding-left: 5px;
+}
+
+.message-title:hover {
+	background: blue;
+	color: white;
+}
+
 .content {
 	border: 1px solid green;
-	width: 891px;
+	width: 876px;
 	display: inline-block;
-	position: relative;
-
-	height: 90%;
+	position:absolute;
+	height: 88.1%;
+	padding: 10px;
 }
 
 footer {
 	border: 1px solid black;
 	height: 50px;
-	width: 1200px;
+	width: 1198px;
 }
 
 	</style>
@@ -88,9 +101,20 @@ footer {
 	<body>
 		<div class="wrapper">
 			
-			<div class="toolbar">Chugmail tools</div> <!-- end chugmail toolbar -->
+			<div class="toolbar">Welcome to Chugmail</div> <!-- end chugmail toolbar -->
 			
-			<div class="messages"> messages list</div> <!-- end messages - these are dynam,ic json pulled form yahoo -->
+			<div class="messages"> 
+				
+				<div class="message-title">from <br> subject</div> <!-- end message title - these are dynamic json pulled form yahoo -->
+				<div class="message-title">from <br> subject</div> <!-- end message title - these are dynamic json pulled form yahoo -->
+				<div class="message-title">from <br> subject</div> <!-- end message title - these are dynamic json pulled form yahoo -->
+				<div class="message-title">from <br> subject</div> <!-- end message title - these are dynamic json pulled form yahoo -->
+				<div class="message-title">from <br> subject</div> <!-- end message title - these are dynamic json pulled form yahoo -->
+				<div class="message-title">from <br> subject</div> <!-- end message title - these are dynamic json pulled form yahoo -->
+				<div class="message-title">from <br> subject</div> <!-- end message title - these are dynamic json pulled form yahoo -->
+				<div class="message-title">from <br> subject</div> <!-- end message title - these are dynamic json pulled form yahoo -->				
+			
+			</div> <!-- end messages -->
 			
 			<div class="content">Selected email content goes in here</div> <!-- end email content -->	
 
