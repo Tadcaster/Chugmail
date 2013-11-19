@@ -45,9 +45,14 @@ time, mark, audio, video, div {
 	vertical-align: baseline;
 }
 
+html, body {
+	height: 100%;
+}
+
 .wrapper {
 	border: 1px solid red;
 	width: 1200px;
+	height: 100%;
 }
 
 .toolbar {
@@ -60,6 +65,7 @@ time, mark, audio, video, div {
 	border: 1px solid orange;
 	width: 300px;
 	display: inline-block;
+	height: 90%;
 }
 
 .content {
@@ -67,11 +73,14 @@ time, mark, audio, video, div {
 	width: 891px;
 	display: inline-block;
 	position: relative;
-	top: -17px;
+
+	height: 90%;
 }
 
-.footer {
-	clear: all;
+footer {
+	border: 1px solid black;
+	height: 50px;
+	width: 1200px;
 }
 
 	</style>
@@ -81,7 +90,7 @@ time, mark, audio, video, div {
 			
 			<div class="toolbar">Chugmail tools</div> <!-- end chugmail toolbar -->
 			
-			<div class="messages"> From <br> Subject</div> <!-- end messages - these are dynam,ic json pulled form yahoo -->
+			<div class="messages"> messages list</div> <!-- end messages - these are dynam,ic json pulled form yahoo -->
 			
 			<div class="content">Selected email content goes in here</div> <!-- end email content -->	
 
